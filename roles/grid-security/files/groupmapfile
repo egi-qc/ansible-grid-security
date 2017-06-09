@@ -1,0 +1,6 @@
+"/dteam/Role=pilot/Capability=NULL" dteampj
+"/dteam/Role=pilot" dteampj
+"/dteam/Role=NULL/Capability=NULL" dteam
+"/dteam" dteam
+"/dteam/*/Role=NULL/Capability=NULL" dteam
+"/dteam/*" dteam

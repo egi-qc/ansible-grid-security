@@ -1,0 +1,23 @@
+---
+- name: Create gridmapdir directory
+  file: path=/etc/grid-security/gridmapdir state=directory owner=root group=root mode=0770
+
+- name: Create gridmapdir accounts
+  file: path=/etc/grid-security/gridmapdir/{{ item }} state=touch owner=root group=root mode=0644
+  with_items: "{{ grid_accounts }}"
+
+- name: Create grid-mapfile
+  copy: src=grid-mapfile dest=/etc/grid-security/grid-mapfile owner=root group=root mode=0644
+
+- name: Create groupmapfile
+  copy: src=groupmapfile dest=/etc/grid-security/groupmapfile owner=root group=root mode=0644
+
+- name: Create voms-grid-mapfile
+  copy: src=voms-grid-mapfile dest=/etc/grid-security/groupmapfile owner=root group=root mode=0644
+
+- name: Create vomsdir directory
+  file: path=/etc/grid-security/vomsdir state=directory owner=root group=root mode=0755
+
+- name: Create vomsdir VOs directory
+  copy: src=vomsdir/{{ item }} dest=/etc/grid-security/vomsdir owner=root group=root mode=0755
+  with_items: "{{ vos }}"
