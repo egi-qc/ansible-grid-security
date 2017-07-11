@@ -12,3 +12,25 @@ grid_accounts:
   - dteampj003
   - dteampj004
   - dteampj005
+home: /home
+pass: *NP*
+shell: /bin/bash
+groups:
+  - name: dteam
+    gid: 15000
+users:
+  - name: dteam001
+    uid: 15001
+    group: dteam
+  - name: dteam002
+    uid: 15002
+    group: dteam
+  - name: dteam003
+    uid: 15003
+    group: dteam
+  - name: dteam004
+    uid: 15004
+    group: dteam
+  - name: dteam005
+    uid: 15005
+    group: dteam
