@@ -67,16 +67,16 @@
 
 - name: Create groups
   group:
-    name: {{ item.name }}
-    gid: {{ item.gid }}
-  with_items: "{{ groups }}" 
+    name: "{{ item.key }}"
+    gid: "{{ item.value.gid }}"
+  with_dict: "{{ grid_groups }}" 
 
 - name: Create accounts
   user:
-    name: {{ item.name }}
-    password: {{ item.pass }}
-    uid: {{ item.uid }}
-    group: {{ item.group }}
-    home: {{ item.home}}/{{item.name}}
-    shell: {{ item.shell }}
-  with_items: "{{ users }}" 
+    name: "{{ item.key }}"
+    password: "{{ pass }}"
+    uid: "{{ item.value.uid }}"
+    group: "{{ item.value.group }}"
+    home: "{{ home }}/{{ item.key }}"
+    shell: "{{ shell }}"
+  with_dict: "{{ grid_users }}" 
