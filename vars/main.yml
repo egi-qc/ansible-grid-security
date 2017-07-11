@@ -18,6 +18,8 @@ shell: /bin/bash
 grid_groups:
   dteam:
     gid: 15000
+  dteampj:
+    gid: 15001
 grid_users:
   dteam001:
     uid: 15001
