@@ -34,3 +34,33 @@ grid_users:
   dteam005:
     uid: 15005
     group: dteam
+  dteampj001:
+    uid: 15101
+    group: dteampj
+    groups: 
+      - dteam
+      - dteampj
+  dteampj002:
+    uid: 15102
+    group: dteampj
+    groups: 
+      - dteam
+      - dteampj
+  dteampj003:
+    uid: 15103
+    group: dteampj
+    groups: 
+      - dteam
+      - dteampj
+  dteampj004:
+    uid: 15104
+    group: dteampj
+    groups: 
+      - dteam
+      - dteampj
+  dteampj005:
+    uid: 15105
+    group: dteampj
+    groups: 
+      - dteam
+      - dteampj
