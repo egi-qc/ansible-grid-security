@@ -17,12 +17,12 @@
 
 - name: Create gridmapdir accounts
   file:
-    path: /etc/grid-security/gridmapdir/{{ item }}
+    path: "/etc/grid-security/gridmapdir/{{ item.key }}"
     state: touch
     owner: root
     group: root
     mode: 0644
-  with_items: "{{ grid_accounts }}"
+  with_dict: "{{ grid_users }}"
 
 - name: Create grid-mapfile
   copy:
