@@ -24,45 +24,40 @@ grid_users:
   dteam001:
     uid: 15001
     group: dteam
+    groups: dteam
   dteam002:
     uid: 15002
     group: dteam
+    groups: dteam
   dteam003:
     uid: 15003
     group: dteam
+    groups: dteam
   dteam004:
     uid: 15004
     group: dteam
+    groups: dteam
   dteam005:
     uid: 15005
     group: dteam
+    groups: dteam
   dteampj001:
     uid: 15101
     group: dteampj
-    groups: 
-      - dteam
-      - dteampj
+    groups: dteampj,dteam
   dteampj002:
     uid: 15102
     group: dteampj
-    groups: 
-      - dteam
-      - dteampj
+    groups: dteampj,dteam
   dteampj003:
     uid: 15103
     group: dteampj
-    groups: 
-      - dteam
-      - dteampj
+    groups: dteampj,dteam
   dteampj004:
     uid: 15104
     group: dteampj
-    groups: 
-      - dteam
-      - dteampj
+    groups: dteampj,dteam
   dteampj005:
     uid: 15105
     group: dteampj
-    groups: 
-      - dteam
-      - dteampj
+    groups: dteampj,dteam
