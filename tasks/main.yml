@@ -16,11 +16,11 @@
     mode: 0770
 
 - name: Create gridmapdir accounts
-  file:
-    path: "/etc/grid-security/gridmapdir/{{ item.key }}"
-    state: touch
+  copy:
+    dest: "/etc/grid-security/gridmapdir/{{ item.key }}"
     owner: root
     group: root
+    content: ""
     mode: 0644
   with_dict: "{{ grid_users }}"
 
