@@ -2,3 +2,5 @@
 .retry
 # ignore molecule temp files
 .molecule/
+__pycache__
+.pytest_cache
