@@ -1,0 +1,4 @@
+# ignore ansible retries
+.retry
+# ignore molecule temp files
+.molecule/
