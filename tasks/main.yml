@@ -69,7 +69,7 @@
   group:
     name: "{{ item.key }}"
     gid: "{{ item.value.gid }}"
-  with_dict: "{{ grid_groups }}" 
+  with_dict: "{{ grid_groups }}"
 
 - name: Create accounts
   user:
@@ -80,4 +80,4 @@
     groups: "{{ item.value.groups }}"
     home: "{{ home }}/{{ item.key }}"
     shell: "{{ shell }}"
-  with_dict: "{{ grid_users }}" 
+  with_dict: "{{ grid_users }}"
