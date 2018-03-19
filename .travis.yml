@@ -3,11 +3,12 @@ language: python
 sudo: required
 python:
   - '2.7'
+apt_addons:
+  - 
 before_install:
   - pip install --upgrade pip
 install:
-  - pip install ansible-container[docker]
-  - pip install molecule
+  - pip install -r molecule/default/requirements.txt
 before_script:
 script:
   - molecule lint
