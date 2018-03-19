@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brucellino/ansible-grid-security.svg?branch=master)](https://travis-ci.org/brucellino/ansible-grid-security)
+
 Grid Security
 =========
 
