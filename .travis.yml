@@ -10,6 +10,9 @@ install:
 before_script:
 script:
   - molecule lint
+  - molecule create
+  - molecule converge
+  - molecule verify
 before_cache:
 after_success:
 after_failure:
