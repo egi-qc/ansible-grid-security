@@ -1,0 +1,25 @@
+---
+language: python
+sudo: required
+python:
+  - '2.7'
+before_install:
+  - pip install --upgrade pip
+install:
+  - pip install -r molecule/default/requirements.txt
+before_script:
+script:
+  - molecule lint
+  - molecule create
+  - molecule converge
+  - molecule verify
+before_cache:
+after_success:
+after_failure:
+before_deploy:
+deploy:
+after_deploy:
+after_script:
+notifications:
+  slack:
+    secure: QrdZmKGsAlbMtI6l+vmjJut0JwWLX/YZLXkcSCFh3wTzNG232D/y0pckq6rIVt2KJFhBl0Ul5dTX8v53FGhYWQ6e/h3YApSiMTX1x9nKTQ/ipqlN9sPJ6EGnFEA8jIyxUkwnUK43k8AVKz8393iKCxVGwPg/6kU4x4WKbBslL/BgwgQ26c05Sjcng00z/L3f22QkFOXYa/tfsN+MAC1G9lI4Bul7H24MORmnCgA+8sFIilvSWXah+mEFijjEhOhsyiM+CDXDMSydHdm9/jxgP4/vUbnKQhOzIlBDJJw7CrMcsilTMw9sGK+Y42R+jNjen2sXoF4pb92iQ+XUM2brxVh6l5E2Kr1czFwgU8QBjtrIurF149fmjNveIjlR7OTXrENdWRKn/F8y31lPO5H5X2C7YpQFtO/gjCqKqdgRcACirzYPBiiBV8IAXyWOhF/zKQoqzCj5DRqMXcGrMD/wkNmrGF6K6oyerSCZ9UhTQ05LQQjX5H7yV6cKq2eQh9rBr8M9hMNcAc9K0cP1YF+Z08uXcyGDZtPn2VaD7SWtOdrDPc0pqY16VCU/ndjlsxYXyG0scX1NoxulK5ycuHYmkjzL4uaxNSnAuJvSWwK/FpyErWJeNtEqgj2B1KhAxel8LSGrxfuNwrf0x5WqVsaSIAeRf23oqraXYZ5QB3PksIY=
