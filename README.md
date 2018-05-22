@@ -3,7 +3,7 @@
 Grid Security
 =========
 
-A role to set up the grid security profile on relevant nodes
+A role to set up the grid security profile on relevant nodes.
 
 Requirements
 ------------
