@@ -58,7 +58,7 @@ pytest==3.4.2
 python-dateutil==2.6.1
 python-gilt==1.1.0
 PyYAML==5.4
-requests==2.18.4
+requests==2.20.0
 ruamel.ordereddict==0.4.13
 ruamel.yaml==0.15.35
 sh==1.12.14
