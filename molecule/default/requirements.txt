@@ -68,7 +68,7 @@ structlog==18.1.0
 tabulate==0.7.7
 testinfra==1.7.1
 tree-format==0.1.2
-urllib3==1.22
+urllib3==1.26.5
 websocket-client==0.47.0
 whichcraft==0.4.1
 wrapt==1.10.11
